@@ -56,13 +56,16 @@
             <p><strong>4.3 - </strong> Faça upload do seu código no Github ou outro site semelhante e envie o link para hess.sergio@gmail.com. Se tiver algo não convencional para fazer seu código rodar informe no e-mail;</p>
         </li>
         <li>
-            <p><strong>4.4 - </strong> Qualquer dúvida sempre pergunte;</p>
+            <p><strong>4.4 - </strong> Faça bloqueios de refresh na página durante o jogo para impedir falcatruas;</p>
         </li>
         <li>
-            <p><strong>4.5 - </strong> Faça um frontend simples de se usar;</p>
+            <p><strong>4.5 - </strong> Qualquer dúvida sempre pergunte;</p>
         </li>
         <li>
-            <p><strong>4.6 - </strong> Divirta-se codando, trabalho sem amor não vira;</p>
+            <p><strong>4.6 - </strong> Faça um frontend simples de se usar;</p>
+        </li>
+        <li>
+            <p><strong>4.7 - </strong> Divirta-se codando, trabalho sem amor não vira;</p>
         </li>
     </ul>
 </div>

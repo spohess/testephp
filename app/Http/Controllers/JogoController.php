@@ -5,12 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 
-class SiteController extends Controller
+class JogoController extends Controller
 {
 
     public function getIndex(Request $request)
     {
 
-        return view('site.index');
+        return view('jogo.index');
     }
 }

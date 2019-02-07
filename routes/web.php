@@ -1,3 +1,8 @@
 <?php
 
 Route::get('/', 'SiteController@getIndex');
+
+Route::prefix('/jogo')->group(function (){
+
+    Route::get('/', 'JogoController@getIndex')->name('jogo_get_index');
+});
