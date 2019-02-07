@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e40867-6580-41ce-9e4b-b748de74ae8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/regras.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/regras.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/site/pontuacao.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/site/regras.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
+            <state relative-caret-position="789">
+              <caret line="61" column="74" selection-start-line="61" selection-start-column="74" selection-end-line="61" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -39,9 +38,9 @@
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/site/regras.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/site/jogabilidade.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/site/pontuacao.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/site/regras.blade.php" />
       </list>
     </option>
   </component>
@@ -253,12 +252,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549559692545</updated>
       <workItem from="1549559693776" duration="432000" />
-      <workItem from="1549560791375" duration="11441000" />
+      <workItem from="1549560791375" duration="11692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11873000" />
+    <option name="totallyTimeSpent" value="12124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="-11" width="1883" height="1092" extended-state="6" />
@@ -320,13 +319,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/site/regras.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="58" column="85" selection-start-line="58" selection-start-column="85" selection-end-line="58" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -350,8 +342,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/site/pontuacao.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
+        <state relative-caret-position="157">
           <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/site/regras.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="61" column="74" selection-start-line="61" selection-start-column="74" selection-end-line="61" selection-end-column="74" />
         </state>
       </provider>
     </entry>

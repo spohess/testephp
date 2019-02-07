@@ -56,7 +56,13 @@
             <p><strong>4.3 - </strong> Faça upload do seu código no Github ou outro site semelhante e envie o link para hess.sergio@gmail.com. Se tiver algo não convencional para fazer seu código rodar informe no e-mail;</p>
         </li>
         <li>
-            <p><strong>4.4 - </strong> Divirta-se codando, trabalho sem amor não vira;</p>
+            <p><strong>4.4 - </strong> Qualquer dúvida sempre pergunte;</p>
+        </li>
+        <li>
+            <p><strong>4.5 - </strong> Faça um frontend simples de se usar;</p>
+        </li>
+        <li>
+            <p><strong>4.6 - </strong> Divirta-se codando, trabalho sem amor não vira;</p>
         </li>
     </ul>
 </div>
