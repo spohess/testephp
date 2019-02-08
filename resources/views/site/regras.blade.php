@@ -53,7 +53,7 @@
             <p><strong>4.2 - </strong> Preocupe-se em utilizar a Orientação Objeto adequadamente, se julgar necessário use o Designer Patterns que quiser, mas cuidado com a regra "menos é mais";</p>
         </li>
         <li>
-            <p><strong>4.3 - </strong> Faça upload do seu código no Github ou outro site semelhante e envie o link para hess.sergio@gmail.com. Se tiver algo não convencional para fazer seu código rodar informe no e-mail;</p>
+            <p><strong>4.3 - </strong> Faça upload do seu código no Github ou outro site semelhante e envie o link para sergio.hess@psychemedics.com.br. Se tiver algo não convencional para fazer seu código rodar informe no e-mail;</p>
         </li>
         <li>
             <p><strong>4.4 - </strong> Faça bloqueios de refresh na página durante o jogo para impedir falcatruas;</p>
