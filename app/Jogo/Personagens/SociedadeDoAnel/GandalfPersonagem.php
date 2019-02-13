@@ -8,28 +8,12 @@ use App\Jogo\Personagens\AbstractPersonagem;
 final class GandalfPersonagem extends AbstractPersonagem
 {
 
-
-    protected function setForca(): void
+    public function __construct()
     {
 
-        $this->forca = 3;
-    }
-
-    protected function setDestreza(): void
-    {
-
-        $this->destreza = 4;
-    }
-
-    protected function setMagia(): void
-    {
-
-        $this->magia = 10;
-    }
-
-    protected function setNome(): void
-    {
-
-        $this->nome = 'Gandalf';
+        $this->setForca(3);
+        $this->setDestreza(4);
+        $this->setMagia(10);
+        $this->setNome('Gandalf');
     }
 }

@@ -8,28 +8,12 @@ use App\Jogo\Personagens\AbstractPersonagem;
 final class AragornPersonagem extends AbstractPersonagem
 {
 
-
-    protected function setForca(): void
+    public function __construct()
     {
 
-        $this->forca = 8;
-    }
-
-    protected function setDestreza(): void
-    {
-
-        $this->destreza = 5;
-    }
-
-    protected function setMagia(): void
-    {
-
-        $this->magia = 1;
-    }
-
-    protected function setNome(): void
-    {
-
-        $this->nome = 'Aragorn';
+        $this->setForca(8);
+        $this->setDestreza(5);
+        $this->setMagia(1);
+        $this->setNome('Aragorn');
     }
 }

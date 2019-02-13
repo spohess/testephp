@@ -8,28 +8,12 @@ use App\Jogo\Personagens\AbstractPersonagem;
 final class MerryPersonagem extends AbstractPersonagem
 {
 
-
-    protected function setForca(): void
+    public function __construct()
     {
 
-        $this->forca = 3;
-    }
-
-    protected function setDestreza(): void
-    {
-
-        $this->destreza = 2;
-    }
-
-    protected function setMagia(): void
-    {
-
-        $this->magia = 0;
-    }
-
-    protected function setNome(): void
-    {
-
-        $this->nome = 'Merry';
+        $this->setForca(3);
+        $this->setDestreza(2);
+        $this->setMagia(0);
+        $this->setNome('Merry');
     }
 }

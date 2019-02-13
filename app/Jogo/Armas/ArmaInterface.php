@@ -13,4 +13,6 @@ interface ArmaInterface
     public function aumentaDestreza(PersonagemInterface $personagem): void;
 
     public function aumentaMagia(PersonagemInterface $personagem): void;
+
+    public function atendeLimitacao(PersonagemInterface $personagem, string $habilidade): bool;
 }

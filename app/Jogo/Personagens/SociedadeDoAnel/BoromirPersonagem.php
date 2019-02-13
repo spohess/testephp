@@ -8,28 +8,12 @@ use App\Jogo\Personagens\AbstractPersonagem;
 final class BoromirPersonagem extends AbstractPersonagem
 {
 
-
-    protected function setForca(): void
+    public function __construct()
     {
 
-        $this->forca = 9;
-    }
-
-    protected function setDestreza(): void
-    {
-
-        $this->destreza = 4;
-    }
-
-    protected function setMagia(): void
-    {
-
-        $this->magia = 0;
-    }
-
-    protected function setNome(): void
-    {
-
-        $this->nome = 'Boromir';
+        $this->setForca(9);
+        $this->setDestreza(4);
+        $this->setMagia(0);
+        $this->setNome('Boromir');
     }
 }

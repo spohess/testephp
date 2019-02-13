@@ -8,28 +8,12 @@ use App\Jogo\Personagens\AbstractPersonagem;
 final class FrodoPersonagem extends AbstractPersonagem
 {
 
-
-    protected function setForca(): void
+    public function __construct()
     {
 
-        $this->forca = 1;
-    }
-
-    protected function setDestreza(): void
-    {
-
-        $this->destreza = 2;
-    }
-
-    protected function setMagia(): void
-    {
-
-        $this->magia = 0;
-    }
-
-    protected function setNome(): void
-    {
-
-        $this->nome = 'Frodo';
+        $this->setForca(1);
+        $this->setDestreza(2);
+        $this->setMagia(0);
+        $this->setNome('Frodo');
     }
 }

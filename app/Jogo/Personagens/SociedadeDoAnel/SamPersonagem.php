@@ -9,27 +9,12 @@ final class SamPersonagem extends AbstractPersonagem
 {
 
 
-    protected function setForca(): void
+    public function __construct()
     {
 
-        $this->forca = 4;
-    }
-
-    protected function setDestreza(): void
-    {
-
-        $this->destreza = 3;
-    }
-
-    protected function setMagia(): void
-    {
-
-        $this->magia = 0;
-    }
-
-    protected function setNome(): void
-    {
-
-        $this->nome = 'Sam';
+        $this->setForca(4);
+        $this->setDestreza(3);
+        $this->setMagia(0);
+        $this->setNome('Sam');
     }
 }

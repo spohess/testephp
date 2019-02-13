@@ -2,61 +2,46 @@
 
 namespace App\Jogo\Armas;
 
+use App\Jogo\Personagens\PersonagemInterface;
+use App\Jogo\TemHabilidade;
+
 
 abstract class AbstractArma implements ArmaInterface
 {
 
-    protected $forca;
+    use TemHabilidade;
 
-    protected $destreza;
+    const HABILIDADE_FORCA = 'forca';
 
-    protected $magia;
+    const HABILIDADE_DESTREZA = 'destreza';
 
-    protected $limitacao;
+    const HABILIDADE_MAGIA = 'magia';
 
 
-    public function __construct()
+    public function aumentaForca(PersonagemInterface $personagem): void
     {
 
-        $this->setForca();
-        $this->setDestreza();
-        $this->setMagia();
-        $this->setLimitacao();
-        $this->setNome();
+        if( $this->atendeLimitacao($personagem, self::HABILIDADE_FORCA) ) {
+
+            $personagem->setForca( $personagem->getForca() + $this->getForca() );
+        }
     }
 
-    abstract protected function setForca(): void;
-
-    abstract protected function setDestreza(): void;
-
-    abstract protected function setMagia(): void;
-
-    abstract protected function setLimitacao(): void;
-
-    abstract protected function setNome(): void;
-
-
-    public function getForca(): int
+    public function aumentaDestreza(PersonagemInterface $personagem): void
     {
 
-        return $this->forca;
+        if( $this->atendeLimitacao($personagem, self::HABILIDADE_DESTREZA) ) {
+
+            $personagem->setDestreza( $personagem->getDestreza() + $this->getDestreza() );
+        }
     }
 
-    public function getDestreza(): int
+    public function aumentaMagia(PersonagemInterface $personagem): void
     {
 
-        return $this->destreza;
-    }
+        if( $this->atendeLimitacao($personagem, self::HABILIDADE_MAGIA) ) {
 
-    public function getMagia(): int
-    {
-
-        return $this->magia;
-    }
-
-    public function getLimitacao()
-    {
-
-        return $this->limitacao;
+            $personagem->setMagia( $personagem->getMagia() + $this->getMagia() );
+        }
     }
 }
