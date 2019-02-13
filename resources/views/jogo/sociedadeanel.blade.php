@@ -25,9 +25,8 @@
 
         </div>
     </div>
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center mt-3">
         <div class="col-12 col-md-6">
-            <hr>
             <input type="button" id="enviaTropa" class="btn btn-primary float-right" value="Enviar Tropa">
         </div>
     </div>

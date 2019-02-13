@@ -46,6 +46,12 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+
+        if($exception instanceof JogoException) {
+
+            return redirect(route('jogo_get_erro'))->with(['mensagem' => $exception->getMessage()]);
+        }
+
         return parent::render($request, $exception);
     }
 }

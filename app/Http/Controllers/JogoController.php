@@ -3,13 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Exceptions\JogoException;
-use App\Jogo\Personagens\SociedadeDoAnel\FrodoPersonagem;
+use App\Http\Requests\PostTropaRequest;
 use App\Jogo\Personagens\SociedadeDoAnel\SociedadeDoAnelFactory;
 use Illuminate\Http\Request;
 
 
 class JogoController extends Controller
 {
+
+    public function getErro(Request $request)
+    {
+
+        return view('jogo.erros', ['mensagem' => session()->get('mensagem')]);
+    }
 
     public function getIndex(Request $request)
     {
@@ -22,7 +28,7 @@ class JogoController extends Controller
         return view('jogo.index', $dadosView);
     }
 
-    public function postTropa(Request $request)
+    public function postTropa(PostTropaRequest $request)
     {
 
         $this->validaPostTropa($request);
@@ -44,7 +50,7 @@ class JogoController extends Controller
             throw new JogoException('Escolha pelo menos um Hobbit');
         }
 
-        if( count($tropa) != 5 ) {
+        if (count($tropa) != 5) {
 
             throw new JogoException('Escolha 5 personagens');
         }
