@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Exceptions\JogoException;
 use App\Http\Requests\PostTropaRequest;
 use App\Jogo\Personagens\SociedadeDoAnel\SociedadeDoAnelFactory;
+use App\Jogo\Tropa;
 use Illuminate\Http\Request;
 
 
@@ -14,7 +14,9 @@ class JogoController extends Controller
     public function getErro(Request $request)
     {
 
-        return view('jogo.erros', ['mensagem' => session()->get('mensagem')]);
+        $mensagem = session()->get('mensagem') ?? '404';
+
+        return view('jogo.erros', ['mensagem' => $mensagem]);
     }
 
     public function getIndex(Request $request)
@@ -31,28 +33,23 @@ class JogoController extends Controller
     public function postTropa(PostTropaRequest $request)
     {
 
-        $this->validaPostTropa($request);
+        Tropa::validaTropaSelecionada($request->tropa);
+
+        session()->put('fluxoliberado', true);
+
+        Tropa::separaSelecionados();
+
+        return redirect(route('jogo_get_armas'));
     }
 
-    private function validaPostTropa(Request $request)
+    public function getArmas(Request $request)
     {
 
-        $hobbits = SociedadeDoAnelFactory::getHobbitsIndex();
-        $tropa = array_values(array_keys($request->tropa));
+        $dadosView = [
+            'etapa' => 'armas',
+            'sociedade' => session()->get('selecionados')
+        ];
 
-        if (empty($request->tropa)) {
-
-            throw new JogoException('Escolha os personagens corretamente');
-        }
-
-        if (empty(array_intersect($tropa, $hobbits))) {
-
-            throw new JogoException('Escolha pelo menos um Hobbit');
-        }
-
-        if (count($tropa) != 5) {
-
-            throw new JogoException('Escolha 5 personagens');
-        }
+        return view('jogo.index', $dadosView);
     }
 }

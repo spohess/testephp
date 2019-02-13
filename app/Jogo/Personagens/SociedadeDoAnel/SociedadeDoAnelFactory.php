@@ -12,21 +12,21 @@ final class SociedadeDoAnelFactory implements TropaFactoryInterface
     {
 
         return [
-            new FrodoPersonagem(),      // 0
-            new SamPersonagem(),        // 1
-            new MerryPersonagem(),      // 2
-            new PippinPersonagem(),     // 3
-            new AragornPersonagem(),    // 4
-            new BoromirPersonagem(),    // 5
-            new LegolasPersonagem(),    // 6
-            new GimliPersonagem(),      // 7
-            new GandalfPersonagem(),    // 8
+            1 => new FrodoPersonagem(),
+            2 => new SamPersonagem(),
+            3 => new MerryPersonagem(),
+            4 => new PippinPersonagem(),
+            5 => new AragornPersonagem(),
+            6 => new BoromirPersonagem(),
+            7 => new LegolasPersonagem(),
+            8 => new GimliPersonagem(),
+            9 => new GandalfPersonagem(),
         ];
     }
 
     public static function getHobbitsIndex(): array
     {
 
-        return [0, 1, 2, 3];
+        return [1, 2, 3, 4];
     }
 }

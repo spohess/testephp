@@ -9,9 +9,6 @@
         </div>
     </div>
 
-    @if($etapa == 'sociedadeanel')
-
-        @include('jogo.sociedadeanel')
-    @endif
+    @include('jogo.' . $etapa)
 
 @endsection
