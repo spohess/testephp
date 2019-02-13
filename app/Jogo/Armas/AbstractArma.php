@@ -1,15 +1,10 @@
 <?php
 
-namespace App\Jogo\Personagens;
-
-use App\Jogo\Armas\TraitArmado;
+namespace App\Jogo\Armas;
 
 
-abstract class AbstractPersonagem implements PersonagemInterface
+abstract class AbstractArma implements ArmaInterface
 {
-
-    use TraitArmado;
-
 
     protected $forca;
 
@@ -17,7 +12,7 @@ abstract class AbstractPersonagem implements PersonagemInterface
 
     protected $magia;
 
-    protected $nome;
+    protected $limitacao;
 
 
     public function __construct()
@@ -26,6 +21,7 @@ abstract class AbstractPersonagem implements PersonagemInterface
         $this->setForca();
         $this->setDestreza();
         $this->setMagia();
+        $this->setLimitacao();
         $this->setNome();
     }
 
@@ -34,6 +30,8 @@ abstract class AbstractPersonagem implements PersonagemInterface
     abstract protected function setDestreza(): void;
 
     abstract protected function setMagia(): void;
+
+    abstract protected function setLimitacao(): void;
 
     abstract protected function setNome(): void;
 
@@ -56,9 +54,9 @@ abstract class AbstractPersonagem implements PersonagemInterface
         return $this->magia;
     }
 
-    public function getNome()
+    public function getLimitacao()
     {
 
-        return $this->nome;
+        return $this->limitacao;
     }
 }

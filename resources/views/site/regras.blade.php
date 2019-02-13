@@ -7,24 +7,33 @@
         <li>
             <p><strong>1.1 - </strong> Pelo menos um Hobbit deve ser selecionado;</p>
         </li>
+        <li>
+            <p><strong>1.2 - </strong> Na tropa de orcs deve ter pelo menos 1 Uruk-Hai os demais serão aleatórios;</p>
+        </li>
+        <li>
+            <p><strong>1.3 - </strong> Na tropa de orcs só pode haver um Sauron;</p>
+        </li>
     </ul>
 
     <h3 class="mt-5 text-primary">2 - Entrega de armas</h3>
     <ul class="list-unstyled">
         <li>
-            <p><strong>2.1 - </strong> Nenhum membro poderá utilizar uma arma onde ele não atenda a habilidade mínima dela (Limitação);</p>
+            <p><strong>2.1 - </strong> <strong>SOMENTE</strong> 5 armas serão escolhidas aleatóriamente e disponibilizadas para os personagens. A cada arma entregue uma arma a menos na lista disponível;</p>
+        </li>
+        <li>
+            <p><strong>2.2 - </strong> Nenhum membro poderá utilizar uma arma onde ele não atenda a habilidade mínima dela (Limitação);</p>
             <ul>
                 <li><p><strong>Exemplo:</strong> Frodo tem 1 ponto de força então ele não conseguirá usar um Machado porque a limitação é Força >= 5;</p></li>
             </ul>
         </li>
         <li>
-            <p><strong>2.2 - </strong> Somente o Frodo poderá usar o Um Anel;</p>
+            <p><strong>2.3 - </strong> Somente o Frodo poderá usar o Um Anel;</p>
         </li>
         <li>
-            <p><strong>2.3 - </strong> Somente o Aragorn poderá chamar a Arwen;</p>
+            <p><strong>2.4 - </strong> Somente o Aragorn poderá chamar a Arwen;</p>
         </li>
         <li>
-            <p><strong>2.4 - </strong> Orcs tem suas armas atribuídas automaticamente, nenhum deles irá para a batalha sem arma, se uma arma for atribuída a ele e não atender o item 2.1 outra arma deverá ser atribuída;</p>
+            <p><strong>2.5 - </strong> Orcs tem suas armas atribuídas automaticamente, nenhum deles irá para a batalha sem arma, se uma arma for atribuída a ele e não atender o item 2.1 outra arma deverá ser atribuída;</p>
         </li>
     </ul>
 
@@ -50,7 +59,7 @@
             <p><strong>4.1 - </strong> O uso de bibliotecas, frameworks e banco de dados são livres, use o que tiver que usar para fazer o jogo;</p>
         </li>
         <li>
-            <p><strong>4.2 - </strong> Preocupe-se em utilizar a Orientação Objeto adequadamente, se julgar necessário use o Designer Patterns que quiser, mas cuidado com a regra "menos é mais";</p>
+            <p><strong>4.2 - </strong> O objetivo do teste não é a entrega em si, não é avaliar o certo o erro e sim analisar o nível do candidato. Preocupe-se em utilizar a Orientação Objeto adequadamente, se julgar necessário use o Designer Patterns que quiser;</p>
         </li>
         <li>
             <p><strong>4.3 - </strong> Faça upload do seu código no Github ou outro site semelhante e envie o link para sergio.hess@psychemedics.com.br. Se tiver algo não convencional para fazer seu código rodar informe no e-mail;</p>
