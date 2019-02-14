@@ -2,10 +2,8 @@
 
 namespace App\Jogo\Personagens\SociedadeDoAnel;
 
-use App\Jogo\Personagens\TropaFactoryInterface;
 
-
-final class SociedadeDoAnelFactory implements TropaFactoryInterface
+final class SociedadeDoAnelFactory
 {
 
     public static function getTropa(): array

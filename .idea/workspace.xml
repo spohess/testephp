@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="41e40867-6580-41ce-9e4b-b748de74ae8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JogoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JogoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/FluxoLiberadoMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/FluxoLiberadoMiddleware.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Jogo/Personagens/SociedadeDoAnel/SociedadeDoAnelFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jogo/Personagens/SociedadeDoAnel/SociedadeDoAnelFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/jogo/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jogo/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Jogo/Personagens/TropaFactoryInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/jogo/armas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jogo/armas.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/jogo/sociedadeanel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jogo/sociedadeanel.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,17 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="103" selection-start-line="11" selection-start-column="103" selection-end-line="11" selection-end-column="103" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+            <state relative-caret-position="204">
+              <caret line="12" column="76" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -42,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JogoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="854">
+              <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
               <folding>
                 <element signature="e#40#79#0#PHP" expanded="true" />
               </folding>
@@ -52,45 +44,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/jogo/armas.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/jogo/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Jogo/Armas/ArsenaFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="463">
+              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/jogo/armas.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="701">
+              <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/jogo/sociedadeanel.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/FluxoLiberadoMiddleware.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+            <state relative-caret-position="323">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding>
                 <element signature="e#39#72#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Jogo/Tropa.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="37" column="45" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -110,10 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Jogo/Personagens/GimliPersonagem.php" />
-        <option value="$PROJECT_DIR$/app/Jogo/Personagens/GandalfPersonagem.php" />
-        <option value="$PROJECT_DIR$/app/Jogo/Personagens/OlhoDeSauronPersonagem.php" />
-        <option value="$PROJECT_DIR$/app/Jogo/Personagens/UrukHaiPersonagem.php" />
         <option value="$PROJECT_DIR$/app/Jogo/Personagens/SnagaPersonagem.php" />
         <option value="$PROJECT_DIR$/app/Jogo/Armas/ArmasInterface.php" />
         <option value="$PROJECT_DIR$/app/Jogo/Armas/AbstractArmas.php" />
@@ -124,7 +107,6 @@
         <option value="$PROJECT_DIR$/app/Jogo/Personagens/TropaFactoryInterface.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/site/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/jogo/sociedadeanel.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/PostTropaRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/jogo/erros.blade.php" />
         <option value="$PROJECT_DIR$/app/Jogo/Personagens/AbstractPersonagem.php" />
@@ -151,16 +133,21 @@
         <option value="$PROJECT_DIR$/app/Jogo/Armas/CajadoArma.php" />
         <option value="$PROJECT_DIR$/app/Jogo/Armas/MachadoDuploArma.php" />
         <option value="$PROJECT_DIR$/app/Jogo/Armas/ChamarArwenArma.php" />
-        <option value="$PROJECT_DIR$/app/Jogo/Personagens/SociedadeDoAnel/SociedadeDoAnelFactory.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/app/Jogo/Tropa.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/JogoIniciadoMiddleware.php" />
         <option value="$PROJECT_DIR$/resources/views/jogo/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/SemReloadMiddleware.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Jogo/JogoFactoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/Jogo/TropaFactoryInterface.php" />
+        <option value="$PROJECT_DIR$/app/Jogo/Personagens/SociedadeDoAnel/SociedadeDoAnelFactory.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/FluxoLiberadoMiddleware.php" />
+        <option value="$PROJECT_DIR$/app/Jogo/Armas/ArsenaFactory.php" />
+        <option value="$PROJECT_DIR$/resources/views/jogo/sociedadeanel.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/JogoController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/FluxoLiberadoMiddleware.php" />
+        <option value="$PROJECT_DIR$/resources/views/jogo/armas.blade.php" />
       </list>
     </option>
   </component>
@@ -323,7 +310,7 @@
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Jogo" type="462c0819:PsiDirectoryNode" />
-              <item name="Personagens" type="462c0819:PsiDirectoryNode" />
+              <item name="Armas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
@@ -331,7 +318,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Jogo" type="462c0819:PsiDirectoryNode" />
               <item name="Personagens" type="462c0819:PsiDirectoryNode" />
-              <item name="SociedadeDoAnel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
@@ -373,15 +359,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CoffeeScript" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Jogo/Armas" />
+      <recent name="$PROJECT_DIR$/resources/views/jogo" />
+      <recent name="$PROJECT_DIR$/app/Jogo/Personagens" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Jogo" />
       <recent name="$PROJECT_DIR$/app/Jogo/Personagens/ExercitoMordor" />
       <recent name="$PROJECT_DIR$/app/Jogo/Personagens/SociedadeDoAnel" />
       <recent name="$PROJECT_DIR$/resources/views/site" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/jogo" />
-      <recent name="$PROJECT_DIR$/app/Jogo/Armas" />
-      <recent name="$PROJECT_DIR$/app/Jogo/Personagens" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -426,7 +413,7 @@
     <frame x="38" y="-11" width="1883" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16239782" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1640327" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -451,13 +438,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/site/pontuacao.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="142" column="13" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
@@ -503,18 +483,10 @@
     <entry file="file://$PROJECT_DIR$/app/Jogo/Personagens/ExercitoMordor/SnagaPersonagem.php" />
     <entry file="file://$PROJECT_DIR$/app/Jogo/Personagens/ExercitoMordor/UrukHaiPersonagem.php" />
     <entry file="file://$PROJECT_DIR$/app/Jogo/Personagens/ExercitoMordor/OlhoDeSauronPersonagem.php" />
-    <entry file="file://$PROJECT_DIR$/app/Jogo/Personagens/TropaFactoryInterface.php" />
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/jogo/sociedadeanel.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -689,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jogo/Armas/EspadaCurtaArma.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Jogo/Armas/EspadaCurtaMagicaArma.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -734,68 +699,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jogo/Personagens/SociedadeDoAnel/SociedadeDoAnelFactory.php">
+    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="850">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jogo/Tropa.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="37" column="45" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/jogo/armas.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/jogo/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="52" column="51" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
-          <caret line="63" column="22" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Jogo/Tropa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="103" selection-start-line="11" selection-start-column="103" selection-end-line="11" selection-end-column="103" />
+        <state relative-caret-position="276">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jogo/Personagens/TropaFactoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jogo/Personagens/SociedadeDoAnel/SociedadeDoAnelFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jogo/Armas/EspadaCurtaArma.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/FluxoLiberadoMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="e#39#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jogo/Armas/ArsenaFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/JogoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="854">
+          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
           <folding>
             <element signature="e#40#79#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/FluxoLiberadoMiddleware.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding>
-            <element signature="e#39#72#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="76" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/jogo/sociedadeanel.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/jogo/armas.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
         </state>
       </provider>
     </entry>

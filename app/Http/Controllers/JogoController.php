@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\PostTropaRequest;
+use App\Jogo\Armas\ArsenaFactory;
 use App\Jogo\Personagens\SociedadeDoAnel\SociedadeDoAnelFactory;
 use App\Jogo\Tropa;
 use Illuminate\Http\Request;
@@ -47,9 +48,16 @@ class JogoController extends Controller
 
         $dadosView = [
             'etapa' => 'armas',
-            'sociedade' => session()->get('selecionados')
+            'sociedade' => session()->get('selecionados'),
+            'armas' => ArsenaFactory::getArsenal(),
         ];
 
         return view('jogo.index', $dadosView);
+    }
+
+    public function postArmas(Request $request)
+    {
+
+        dd($request->all());
     }
 }

@@ -10,4 +10,5 @@ Route::prefix('/jogo')->group(function (){
     Route::post('/tropa', 'JogoController@postTropa')->name('jogo_post_tropa');
 
     Route::get('/armas', 'JogoController@getArmas')->name('jogo_get_armas')->middleware(['fluxoliberado']);
+    Route::post('/armas', 'JogoController@postArmas')->name('jogo_post_armas');
 });

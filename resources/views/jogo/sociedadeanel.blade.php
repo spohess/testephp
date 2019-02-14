@@ -8,11 +8,11 @@
                     Personagem
                     <span class="badge badge-warning badge-pill">força / destreza / magia</span>
                 </li>
-                @foreach($sociedade as $chave => $personagem)
+                @foreach($sociedade as $indicePersonagem => $personagem)
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <div class="form-group form-check mb-0">
-                            <input type="checkbox" class="form-check-input personagem" name="tropa[{{ $chave }}]" id="personagemIdx{{ $chave }}" data-chave="{{ $chave }}">
-                            <label class="form-check-label" for="personagemIdx{{ $chave }}">{{ $personagem->getNome() }}</label>
+                            <input type="checkbox" class="form-check-input personagem" name="tropa[{{ $indicePersonagem }}]" id="personagemIdx{{ $indicePersonagem }}" data-chave="{{ $indicePersonagem }}">
+                            <label class="form-check-label" for="personagemIdx{{ $indicePersonagem }}">{{ $personagem->getNome() }}</label>
                         </div>
                         <span class="badge badge-primary badge-pill">
                             {{ $personagem->getForca() }} /
@@ -37,31 +37,31 @@
 
         $('#enviaTropa').on('click', function () {
 
-            // let hobbits = [0, 1, 2, 3];
-            // let temHobbit = false;
-            // let personagem = $('.personagem:checked');
-            //
-            // personagem.each(function () {
-            //
-            //     if (jQuery.inArray($(this).data('chave'), hobbits) >= 0) {
-            //
-            //         temHobbit = true;
-            //     }
-            // });
-            //
-            // if (!temHobbit) {
-            //
-            //     alert('Selecione um Hobbit');
-            //     return false;
-            // }
-            //
-            // if( personagem.length != 5 ) {
-            //
-            //     alert('Escolha 5 personagens');
-            //     return false;
-            // }
+            let hobbits = [0, 1, 2, 3];
+            let temHobbit = false;
+            let personagem = $('.personagem:checked');
+
+            personagem.each(function () {
+
+                if (jQuery.inArray($(this).data('chave'), hobbits) >= 0) {
+
+                    temHobbit = true;
+                }
+            });
+
+            if (!temHobbit) {
+
+                alert('Selecione um Hobbit');
+                return false;
+            }
+
+            if( personagem.length !== 5 ) {
+
+                alert('Escolha 5 personagens');
+                return false;
+            }
 
             $('#formTropa').submit();
-        })
+        });
     });
 </script>
