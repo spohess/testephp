@@ -6,7 +6,7 @@ namespace App\Jogo\Armas;
 final class ArsenaFactory
 {
 
-    public static function getArsenal(): array
+    public static function getArsenal()
     {
 
         $armas = [
@@ -35,7 +35,7 @@ final class ArsenaFactory
             $armasSelecionadas[$indice] = $armas[$indice];
         }
 
-        return $armasSelecionadas;
+        session()->put('armasSelecionadas', $armasSelecionadas);
     }
 
     private static function getNumero(array $numerosGerados): array

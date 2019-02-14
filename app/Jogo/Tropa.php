@@ -43,9 +43,25 @@ final class Tropa
         $tropaSelecionada = [];
         foreach (session()->get('selecionados') as $selecionado) {
 
-            $tropaSelecionada[] = $sociedade[$selecionado];
+            $tropaSelecionada[$selecionado] = $sociedade[$selecionado];
         }
 
         session()->put('selecionados', $tropaSelecionada);
+    }
+
+    public static function entregaDeArmas(array $armasSelecionadas)
+    {
+
+        $personagens = session()->get('selecionados');
+        $armas = session()->get('armasSelecionadas');
+
+        foreach ($armasSelecionadas as $personagem => $arma) {
+
+            $personagens[$personagem]->setArma($armas[$arma]);
+            $personagens[$personagem]->aumentaHabilidades();
+        }
+
+        session()->put('selecionados', $personagens);
+        session()->put('armasSelecionadas', $armas);
     }
 }

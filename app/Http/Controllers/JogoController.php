@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\JogoException;
 use App\Http\Requests\PostTropaRequest;
 use App\Jogo\Armas\ArsenaFactory;
 use App\Jogo\Personagens\SociedadeDoAnel\SociedadeDoAnelFactory;
@@ -46,10 +47,12 @@ class JogoController extends Controller
     public function getArmas(Request $request)
     {
 
+        ArsenaFactory::getArsenal();
+
         $dadosView = [
             'etapa' => 'armas',
             'sociedade' => session()->get('selecionados'),
-            'armas' => ArsenaFactory::getArsenal(),
+            'armas' => session()->get('armasSelecionadas'),
         ];
 
         return view('jogo.index', $dadosView);
@@ -58,6 +61,29 @@ class JogoController extends Controller
     public function postArmas(Request $request)
     {
 
-        dd($request->all());
+        if (count($request->armas) != 5) {
+
+            throw new JogoException('Entregue todas as armas');
+        }
+
+        session()->put('fluxoliberado', true);
+
+        Tropa::entregaDeArmas($request->armas);
+
+        return redirect(route('jogo_get_armas'));
+    }
+
+    public function getReconhecimento(Request $request)
+    {
+
+        $dadosView = [
+            'etapa' => 'armas',
+        ];
+    }
+
+    public function postReconhecimento(Request $request)
+    {
+
+        //
     }
 }

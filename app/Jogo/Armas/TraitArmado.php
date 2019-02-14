@@ -16,12 +16,4 @@ trait TraitArmado
 
         $this->arma = $arma;
     }
-
-    protected function aumentaHabilidades(PersonagemInterface $personagem): void
-    {
-
-        $this->arma->aumentaForca($personagem);
-        $this->arma->aumentaDestreza($personagem);
-        $this->arma->aumentaMagia($personagem);
-    }
 }

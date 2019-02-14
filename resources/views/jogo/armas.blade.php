@@ -10,10 +10,10 @@
                 @foreach($sociedade as $indicePersonagem => $personagem)
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <div class="form-group form-check mb-0">
-                            <label class="form-check-label" for="personagemIdx{{ $indicePersonagem }}">{{ $personagem->getNome() }}</label>
+                            <label class="form-check-label">{{ $personagem->getNome() }}</label>
                         </div>
                         <div class="float-rigth">
-                            <select class="custom-select custom-select-sm seletorDeArma" name="arma[{{ $indicePersonagem }}]">
+                            <select class="custom-select custom-select-sm seletorDeArma" name="armas[{{ $indicePersonagem }}]">
                                 <option value="">Selecione uma Arma</option>
                                 @foreach($armas as $indiceArma => $arma)
                                     <option value="{{ $indiceArma }}">{{ $arma->getNome() }}</option>
@@ -62,6 +62,8 @@
                     return false;
                 }
             });
+
+            $('#formArma').submit();
         });
     });
 </script>
