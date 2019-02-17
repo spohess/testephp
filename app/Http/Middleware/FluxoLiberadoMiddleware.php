@@ -16,7 +16,7 @@ class FluxoLiberadoMiddleware
 
         if( empty($fluxoLiberado) ){
 
-            throw new JogoException('Fluxo de jogo incorreto');
+//            throw new JogoException('Fluxo de jogo incorreto');
         }
 
         session()->remove('fluxoliberado');

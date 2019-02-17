@@ -54,16 +54,23 @@
 
         $('#atribuiArmas').on('click', function () {
 
+            let count = 0;
             $('.seletorDeArma').find('option:selected').each(function () {
 
                 if ($(this).val() === '') {
 
                     alert('Entregue todas as armas');
                     return false;
+                } else {
+
+                    count++;
+                }
+
+                if( count == 5 ) {
+
+                    $('#formArma').submit();
                 }
             });
-
-            $('#formArma').submit();
         });
     });
 </script>

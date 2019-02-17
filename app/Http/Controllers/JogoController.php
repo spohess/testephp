@@ -68,7 +68,7 @@ class JogoController extends Controller
     public function postArmas(Request $request)
     {
 
-        if (count($request->armas) != 5) {
+        if (count(array_filter($request->armas)) != 5) {
 
             throw new JogoException('Entregue todas as armas');
         }
