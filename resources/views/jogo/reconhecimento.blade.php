@@ -4,7 +4,7 @@
 
             <div class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center active">
-                    Armas
+                    Inimigos
                     <span class="badge badge-warning badge-pill">Arma</span>
                 </li>
                 @foreach($exercidoMordor as $indicePersonagem => $personagem)
