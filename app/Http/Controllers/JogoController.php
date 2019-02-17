@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Exceptions\JogoException;
 use App\Http\Requests\PostTropaRequest;
 use App\Jogo\Armas\ArsenaFactory;
+use App\Jogo\Mensagens;
+use App\Jogo\Personagens\ExercitoMordor\ExercitoMordorFactory;
 use App\Jogo\Personagens\SociedadeDoAnel\SociedadeDoAnelFactory;
 use App\Jogo\Tropa;
 use Illuminate\Http\Request;
@@ -23,6 +25,8 @@ class JogoController extends Controller
 
     public function getIndex(Request $request)
     {
+
+        ExercitoMordorFactory::getTropa();
 
         $dadosView = [
             'etapa' => 'sociedadeanel',
@@ -70,18 +74,42 @@ class JogoController extends Controller
 
         Tropa::entregaDeArmas($request->armas);
 
-        return redirect(route('jogo_get_armas'));
+        return redirect(route('jogo_get_reconhecimento'));
     }
 
     public function getReconhecimento(Request $request)
     {
 
+        $exercidoMordor = ExercitoMordorFactory::getTropa();
+
+        session()->put('exercidoMordor', $exercidoMordor);
+
         $dadosView = [
-            'etapa' => 'armas',
+            'etapa' => 'reconhecimento',
+            'exercidoMordor' => $exercidoMordor,
         ];
+
+        return view('jogo.index', $dadosView);
     }
 
-    public function postReconhecimento(Request $request)
+    public function getRecuar(Request $request)
+    {
+
+        session()->remove('fluxoliberad o');
+        session()->remove('selecionados');
+        session()->remove('exercidoMordor');
+
+        $dadosView = [
+            'etapa' => 'resultado',
+            'titulo' => 'Covarde',
+            'class' => 'danger',
+            'mensagem' => Mensagens::getMensagemRecuar(),
+        ];
+
+        return view('jogo.index', $dadosView);
+    }
+
+    public function getBatalha(Request $request)
     {
 
         //

@@ -16,4 +16,10 @@ trait TraitArmado
 
         $this->arma = $arma;
     }
+
+    public function getArma(): ArmaInterface
+    {
+
+        return $this->arma;
+    }
 }

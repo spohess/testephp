@@ -8,28 +8,12 @@ use App\Jogo\Personagens\AbstractPersonagem;
 final class OlhoDeSauronPersonagem extends AbstractPersonagem
 {
 
-
-    protected function setForca(): void
+    public function __construct()
     {
 
-        $this->forca = 100;
-    }
-
-    protected function setDestreza(): void
-    {
-
-        $this->destreza = 100;
-    }
-
-    protected function setMagia(): void
-    {
-
-        $this->magia = 1000;
-    }
-
-    protected function setNome(): void
-    {
-
-        $this->nome = 'Olho de Sauron';
+        $this->setForca(100);
+        $this->setDestreza(100);
+        $this->setMagia(100);
+        $this->setNome('Olho de Sauron');
     }
 }

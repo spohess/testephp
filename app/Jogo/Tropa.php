@@ -13,7 +13,6 @@ final class Tropa
     public static function validaTropaSelecionada($tropa = null)
     {
 
-
         if (empty($tropa)) {
 
             throw new JogoException('Escolha os personagens corretamente');
@@ -62,6 +61,5 @@ final class Tropa
         }
 
         session()->put('selecionados', $personagens);
-        session()->put('armasSelecionadas', $armas);
     }
 }

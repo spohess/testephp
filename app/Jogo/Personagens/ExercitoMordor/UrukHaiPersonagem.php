@@ -8,28 +8,12 @@ use App\Jogo\Personagens\AbstractPersonagem;
 final class UrukHaiPersonagem extends AbstractPersonagem
 {
 
-
-    protected function setForca(): void
+    public function __construct()
     {
 
-        $this->forca = 10;
-    }
-
-    protected function setDestreza(): void
-    {
-
-        $this->destreza = 7;
-    }
-
-    protected function setMagia(): void
-    {
-
-        $this->magia = 0;
-    }
-
-    protected function setNome(): void
-    {
-
-        $this->nome = 'Uruk-Hai';
+        $this->setForca(10);
+        $this->setDestreza(7);
+        $this->setMagia(0);
+        $this->setNome('Uruk-Hai');
     }
 }
