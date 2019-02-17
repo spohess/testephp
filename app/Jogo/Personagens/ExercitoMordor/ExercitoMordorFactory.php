@@ -59,6 +59,7 @@ final class ExercitoMordorFactory
             $arma = self::getArma($personagem);
 
             $personagem->setArma($arma);
+            $personagem->aumentaHabilidades();
         }
     }
 

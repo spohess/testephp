@@ -26,7 +26,10 @@ class JogoController extends Controller
     public function getIndex(Request $request)
     {
 
-        ExercitoMordorFactory::getTropa();
+        session()->remove('fluxoliberado');
+        session()->remove('selecionados');
+        session()->remove('exercidoMordor');
+        session()->remove('frodoNaBatalha');
 
         $dadosView = [
             'etapa' => 'sociedadeanel',
@@ -95,9 +98,10 @@ class JogoController extends Controller
     public function getRecuar(Request $request)
     {
 
-        session()->remove('fluxoliberad o');
+        session()->remove('fluxoliberado');
         session()->remove('selecionados');
         session()->remove('exercidoMordor');
+        session()->remove('frodoNaBatalha');
 
         $dadosView = [
             'etapa' => 'resultado',
@@ -112,6 +116,37 @@ class JogoController extends Controller
     public function getBatalha(Request $request)
     {
 
-        //
+        $sociedade = session()->get('selecionados');
+        $exercitoMordor = session()->get('exercidoMordor');
+
+        $totalSocidade = Tropa::calculaPontosSociedade($sociedade);
+        $totalMordor = Tropa::calculaPontosMordor($exercitoMordor);
+
+        $titulo = 'Empate';
+        $class = 'warning';
+        $mensagem = 'As duas tropas morreram de exaustão';
+
+        if( $totalSocidade > $totalMordor ) {
+
+            $titulo = 'Vitória';
+            $class = 'success';
+            $mensagem = 'A tropa de Mordor foi massacrada como vermes que são!';
+        }
+
+        if( $totalMordor > $totalSocidade ) {
+
+            $titulo = 'Derrota';
+            $class = 'danger';
+            $mensagem = 'Essa sociedade é uma vergonha, a Terra Médias está perdida!';
+        }
+
+        $dadosView = [
+            'etapa' => 'resultado',
+            'titulo' => $titulo,
+            'class' => $class,
+            'mensagem' => $mensagem,
+        ];
+
+        return view('jogo.index', $dadosView);
     }
 }

@@ -3,6 +3,9 @@
 namespace App\Jogo;
 
 use App\Exceptions\JogoException;
+use App\Jogo\Armas\UmAnelArma;
+use App\Jogo\Personagens\ExercitoMordor\OlhoDeSauronPersonagem;
+use App\Jogo\Personagens\SociedadeDoAnel\FrodoPersonagem;
 use App\Jogo\Personagens\SociedadeDoAnel\SociedadeDoAnelFactory;
 
 
@@ -61,5 +64,50 @@ final class Tropa
         }
 
         session()->put('selecionados', $personagens);
+        session()->remove('armasSelecionadas');
+    }
+
+    public static function calculaPontosSociedade(array $tropa)
+    {
+
+        $total = 0;
+        foreach ($tropa as $personagem) {
+
+            if ($personagem instanceof FrodoPersonagem) {
+
+                if( $personagem->getArma() instanceof UmAnelArma ) {
+
+                    session()->put('frodoNaBatalha', true);
+                }
+            }
+
+            $total += $personagem->getForca();
+            $total += $personagem->getDestreza();
+            $total += $personagem->getMagia();
+        }
+
+        return $total;
+    }
+
+    public static function calculaPontosMordor(array $tropa)
+    {
+
+        $total = 0;
+        foreach ($tropa as $personagem) {
+
+            if ($personagem instanceof OlhoDeSauronPersonagem) {
+
+                if ( !session()->get('frodoNaBatalha') ) {
+
+                    continue;
+                }
+            }
+
+            $total += $personagem->getForca();
+            $total += $personagem->getDestreza();
+            $total += $personagem->getMagia();
+        }
+
+        return $total;
     }
 }

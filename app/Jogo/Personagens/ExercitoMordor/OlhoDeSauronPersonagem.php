@@ -13,7 +13,7 @@ final class OlhoDeSauronPersonagem extends AbstractPersonagem
 
         $this->setForca(100);
         $this->setDestreza(100);
-        $this->setMagia(100);
+        $this->setMagia(1000);
         $this->setNome('Olho de Sauron');
     }
 }
